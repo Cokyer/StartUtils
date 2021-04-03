@@ -1,6 +1,6 @@
-#include "mainwindow.h"
-#include "FileUtils.h"
-#include "Config.h"
+#include "inc/mainwindow.h"
+#include "inc/FileUtils.h"
+#include "inc/Config.h"
 
 #include <QApplication>
 

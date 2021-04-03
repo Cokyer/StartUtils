@@ -1,4 +1,4 @@
-#include "Config.h"
+#include "inc/Config.h"
 #include <QtCore/QtCore>
 #include <QDebug>
 

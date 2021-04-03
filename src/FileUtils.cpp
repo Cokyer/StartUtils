@@ -1,5 +1,5 @@
-#include "FileUtils.h"
-#include "Config.h"
+#include "inc/FileUtils.h"
+#include "inc/Config.h"
 
 FileUtils::FileUtils()
 {
