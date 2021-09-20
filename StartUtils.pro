@@ -11,13 +11,16 @@ CONFIG += c++11
 SOURCES += \
     src/Config.cpp \
     src/FileUtils.cpp \
+    src/RunUtils.cpp \
     src/main.cpp \
     src/mainwindow.cpp
 
 HEADERS += \
     inc/Config.h \
     inc/FileUtils.h \
+    inc/RunUtils.h \
     inc/mainwindow.h \
+    src/Runutils.h
 
 FORMS += \
     ui/mainwindow.ui

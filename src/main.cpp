@@ -13,11 +13,8 @@ int main(int argc, char *argv[])
     }
 
     MainWindow w;
-    FileUtils *file = new FileUtils();
 
     w.initView();
-    w.getData(file->getCount());
-    w.setProcess(file->getProcess());
 
     w.show();
     return a.exec();

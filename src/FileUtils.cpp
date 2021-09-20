@@ -3,9 +3,7 @@
 
 FileUtils::FileUtils()
 {
-    process = new QProcess();
-    process->setReadChannel(QProcess::StandardOutput);
-    //process->setReadChannel(QProcess::StandardError);
+
 }
 
 QStringList FileUtils::getCount()
@@ -16,11 +14,6 @@ QStringList FileUtils::getCount()
     QStringList files = dir.entryList(nameFilters, QDir::Files|QDir::Readable, QDir::Name);
 
     return files;
-}
-
-QProcess* FileUtils::getProcess()
-{
-    return process;
 }
 
 QString FileUtils::selectPath(QWidget *parent)

@@ -5,8 +5,10 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QListWidgetItem>
-#include <QProcess>
 #include <QFileDialog>
+
+#include "inc/RunUtils.h"
+#include "inc/FileUtils.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,16 +19,16 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
     private:
-        QProcess *process;
+        RunUtils *runUtils;
 
     public:
         MainWindow(QWidget *parent = nullptr);
         ~MainWindow();
 
         void initView();
-        void getData(QStringList list);
+        void fetchShList();
 
-        void setProcess(QProcess *process);
+        void initTerminal();
 
     private:
         void getItem(QString service_name, QString status);
